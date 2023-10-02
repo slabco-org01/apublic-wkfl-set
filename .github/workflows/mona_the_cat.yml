@@ -1,4 +1,4 @@
-name: Workflow test v0.4
+name: Slabco workflow test v0.1
 
 on: pull_request
 
