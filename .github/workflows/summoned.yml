@@ -1,0 +1,17 @@
+name: events that trigger a workflow
+on:
+  pull_request:
+
+jobs:
+  triggers:
+     runs-on: ubuntu-latest
+     name: Runs on ${{ github.ref_name }}
+
+     steps:
+       - name: Checkout REPOSITORY_NAME
+         uses: actions/checkout@v4
+
+       - name: I was triggered by branch name
+         run: |
+           echo "You summoned me!"
+           echo "You issued ${{ github.event }}"
