@@ -1,8 +1,8 @@
 name: Slabco workflow test v0.1
 
 on:
-  push:
   pull_request:
+  merge_group:
 
 jobs:
   test:
