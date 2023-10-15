@@ -1,6 +1,7 @@
 name: events that trigger a workflow
 on:
   pull_request:
+  push:
 
 jobs:
   triggers:
