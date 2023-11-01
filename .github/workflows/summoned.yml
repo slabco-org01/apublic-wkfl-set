@@ -1,7 +1,8 @@
-name: events that trigger a workflow
+name: events that trigger a workflow v0.1
 on:
+  workflow_call:
   pull_request:
-  push:
+    types: [ closed, reopened, edited ]
 
 jobs:
   triggers:
